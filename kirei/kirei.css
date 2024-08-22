@@ -213,3 +213,6 @@ footer {
 .bold {
   font-weight: 900;
 }
+.resume-container {
+  padding: 0px 40px;
+}
