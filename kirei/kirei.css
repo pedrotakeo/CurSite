@@ -1,0 +1,122 @@
+@font-face {
+  font-family: "nintendo";
+  src: url("FOT-NewRodin Pro EB.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kosugi";
+  src: url("KosugiMaru-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "mamelon";
+  src: url("Mamelon-3.5-Hi-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "corpround";
+  src: url("Corporate-Logo-Rounded.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/*blue rgb(84,163,252)*/
+/*pink rgb(219, 89, 89)*/
+/*light grey rgb(226, 226, 226)*/
+/*dark grey rgb(24, 24, 24)*/
+.body {
+  background-color: rgb(209, 207, 214);
+  padding: px, 30px;
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.54, 0.08, 0.56, 0.97);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+@keyframes appear {
+  from {
+    opacity: 0%;
+  }
+}
+.tit-div {
+  padding: 40px 30px;
+  font-family: nintendo;
+  background-color: rgb(24, 24, 24);
+}
+
+.maintitle {
+  font-size: 6vh;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+.maintitle:hover {
+  color: rgb(219, 89, 89);
+}
+.subtitle {
+  font-size: 3vh;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s;
+}
+.subtitle:hover {
+  color: rgb(219, 89, 89);
+}
+.botao {
+  transition: 0.2s;
+  display: flex;
+  color: white;
+  background-color: rgb(24, 24, 24);
+  border-radius: 10px;
+  height: 300px;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
+  font-size: 3vh;
+  flex-wrap: wrap;
+  font-family: nintendo;
+  animation-name: shake;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.54, 0.08, 0.56, 0.97);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation-delay: 1.1s;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(-2deg);
+  }
+  10% {
+    transform: rotate(2deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  30% {
+    transform: rotate(2deg);
+  }
+  40% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+}
+.botao:hover {
+  transform: scale(1.1) rotate(-2deg);
+  color: rgb(219, 89, 89);
+  background-color: rgb(255, 255, 255);
+}
+.btn-text {
+  text-decoration: none;
+}
+.main-btn {
+  padding: 0px 50px;
+}
+.contain {
+  padding-top: 50px;
+}
